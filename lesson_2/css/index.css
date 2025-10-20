@@ -1,0 +1,51 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+/* unite absolue: px */
+/* unite relative: %, em, rem */
+
+ul{
+    /* font-size: 32px; */
+    /* background-color: aqua; */
+    /* width: 500px; */
+    /* border: 5px solid yellow; */
+}
+p{
+
+   font-size: 2rem;
+   padding: 5px;
+   margin: 5px;   
+   border: 2px solid brown; 
+   width: 400px;
+}
+h1{
+    /* color: yellow; */
+    /* background-color: black; */
+    /* display: inline; */
+    /* border: 2px solid red; */
+    /* margin: 30px 32px 30px 16px; */
+    /* margin-top: 30px;
+    margin-right: 32px;
+    margin-bottom: 30px; 
+    margin-left: 16px; */
+    /* padding: 10px 20px 30px 15px; */
+    /* padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 15px; */
+}
+.class_1{
+    /* border: 2px solid red; */
+    margin: 0;
+}
+a{
+    background-color: brown;
+    display: block;
+}
+button{
+    color: red;
+    background-color: blueviolet;
+    display: block;
+}
