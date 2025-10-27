@@ -1,0 +1,25 @@
+section div {
+    float: left;
+    margin-right: 1em;
+}
+
+div {
+    float: right;
+    margin-left: 1rem;
+}
+
+section{
+    background-color: aqua;
+    /* overflow: auto; */
+    display: flow-root;
+}
+
+p {
+    /* margin-left: 7rem; */
+    text-align: justify;
+    text-indent: 4rem;
+}
+
+.clear{
+    /* clear: both; */
+}

@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    font-size: 2rem;
+}
+
+header{
+    background-color: blue;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 50px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+
+nav ul li{
+    display: inline;
+    font-size: 1.5rem;
+    margin: 0.25rem;
+}
+
+
+li a{
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+li a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: blue;
+    border-radius: 20px;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+section{
+    height: 75vh;
+}
+
+main section:first-child{
+    padding-top: 50px;
+}
+
+section, footer{
+    text-align: center;
+}
+
+#home{
+    background-color: green;
+}
+
+#about-me{
+    background-color: red;
+}
+#projects{
+    background-color: orange;
+}
+
+#contacts{
+    background-color: blue;
+}

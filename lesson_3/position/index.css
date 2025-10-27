@@ -1,0 +1,51 @@
+body{
+    font-size: 2rem;
+    height: 200vh;
+}
+
+div{
+    border: 2px solid black 
+}
+
+.div1{
+    margin-top: 2rem;
+    margin-inline: auto;
+    max-width: 400px;
+    height: 500px;
+    /* position: relative; */
+}
+
+.div2{
+    margin-top: 3rem;
+    margin-inline: auto;
+    max-width: 300px;
+    height: 300px;
+    /* position: relative; */
+}
+
+.absolute{
+    background-color: red;
+    position: absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.fixed{
+    background-color: blue;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    z-index: 999;
+}
+
+.relative{
+    background-color: brown;
+    position:relative;
+    top: 100px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: green;
+}
