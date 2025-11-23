@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 2.5rem;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            place-items: center;
+            flex-direction: column;
+        }
+        .counter{
+            text-align: center;
+            font-size: 4rem;
+        }
+
+        .button{
+            width:  100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="counter"></div>
+    <div>
+
+        <button class="button" onclick="
+            // counter = counter + 1;
+            //incrementation
+            counter++;
+            elementCounter.innerHTML = counter;
+            console.log(counter)
+            ">+</button>
+
+        <button class="button" onclick="
+            // counter = counter - 1;
+            //decrementation
+            counter--;
+            elementCounter.innerHTML = counter;
+            console.log(counter)
+        ">-</button>
+
+        <button onclick="
+            counter = 0;
+            elementCounter.innerHTML = counter;
+            console.log(counter)
+        ">reset</button>
+    </div>
+
+    <script>
+        let counter = 0;
+       let elementCounter = document.querySelector(".counter")
+       elementCounter.innerHTML = counter
+
+    //    counter = counter * 2;
+    //    counter *= 2;
+    </script>
+</body>
+</html>
