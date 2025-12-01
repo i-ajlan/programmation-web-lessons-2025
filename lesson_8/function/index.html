@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function function1(){
+            console.log("fonction 1")
+        }
+
+        // function1();
+
+        function circleSurface(r = 1){
+           let result = Math.PI * r * r
+           console.log("Avant return");
+           
+           return result
+           console.log("Apres return")
+        }
+        
+        
+        // circleSurface(3);
+        // circleSurface(5);
+        // circleSurface(10);
+        // circleSurface();
+        // circleSurface(14);
+
+        // function lengthHyp(a=1, b=3){
+        //     console.log("a:", a);
+        //     console.log("b:", b);
+            
+        //     console.log(Math.sqrt((a*a) + (b*b)));
+            
+        // }
+
+        let value = circleSurface(5)
+        console.log(value)      
+    </script>
+</body>
+</html>

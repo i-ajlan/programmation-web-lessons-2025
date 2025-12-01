@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="log-in">Log in</button>
+    <button class="subscribe">Subscribe</button>
+    <script>
+        // console.log(typeof console.log) 
+        // console.log(typeof Math.round)
+        // console.log(typeof document.querySelector)
+
+        document.body.innerHTML += "<h1>DOM</h1>"
+        // document.body.innerHTML = ducument.body.innerHTML + "<h1>DOM</h1>";
+
+        // console.log(typeof document.body);
+
+        document.title = "DOM";
+
+        // let buttonElements = document.querySelectorAll('button')
+
+        // console.log(buttonElements)
+        let buttonElement = document.querySelector('.subscribe')
+
+        buttonElement.innerHTML = 'unsubscribe'
+        console.log(buttonElement)
+
+        // "log out", "unsubscribe"
+    </script>
+</body>
+</html>

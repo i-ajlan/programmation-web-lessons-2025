@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rock-Paper-Scissor</h1>
+    <button onclick="
+        let computerMove = '';
+        let rand = Math.random()
+        if(rand < 1/3){
+            computerMove = 'roche'
+        } 
+        else if(rand >= 1/3 && rand <= 2/3){
+            computerMove = 'papier';
+        }
+        else{
+            computerMove = 'ciseau'
+        }
+
+        let result;
+        if(computerMove === 'roche'){
+            result = 'Match nul.'
+            match.nul++;
+            localStorage.setItem('match', JSON.stringify(match))
+            
+        } 
+        else if(computerMove === 'papier'){
+            result = 'Vous avez perdu.'
+            match.perdu++;
+            localStorage.setItem('match', JSON.stringify(match))
+        }
+        else{
+            result = 'Vous avez gagne.'
+            match.gagne++;
+            localStorage.setItem('match', JSON.stringify(match))
+        }
+
+        alert(`Vous avez choisi roche. L\'ordinateur a choisi ${computerMove}. ${result}.
+        match gagne:${match.gagne}, match perdu:${match.perdu}, match nul:${match.nul}`);
+    ">Rock</button>
+
+    <button>Paper</button>
+
+    <button>Scissor</button>
+
+    <script>
+        let match;
+        if(localStorage.getItem('match') === null){
+            match = {
+            gagne: 0,
+            perdu: 0,
+            nul: 0
+        } 
+        } else{
+            match = JSON.parse(localStorage.getItem('match'))
+        }
+         
+
+
+        // console.log(localStorage.getItem('maison'))
+        // localStorage.setItem('greeting', 'Hello World!')
+        // console.log(localStorage.getItem('greeting'))
+        // localStorage.setItem('greeting', "Bonswa tout moun!")
+        // localStorage.setItem('products', "[chaussures, chemises, chaussettes]")
+        // console.log(localStorage.getItem('products'))
+        // localStorage
+    </script>
+</body>
+</html>
