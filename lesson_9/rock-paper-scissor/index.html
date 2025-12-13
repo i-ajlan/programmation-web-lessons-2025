@@ -8,46 +8,34 @@
 <body>
     <h1>Rock-Paper-Scissor</h1>
     <button onclick="
-        let computerMove = '';
-        let rand = Math.random()
-        if(rand < 1/3){
-            computerMove = 'roche'
-        } 
-        else if(rand >= 1/3 && rand <= 2/3){
-            computerMove = 'papier';
-        }
-        else{
-            computerMove = 'ciseau'
-        }
+        computerMove = chooseComputerMove();
 
-        let result;
-        if(computerMove === 'roche'){
-            result = 'Match nul.'
-            match.nul++;
-            localStorage.setItem('match', JSON.stringify(match))
-            
-        } 
-        else if(computerMove === 'papier'){
-            result = 'Vous avez perdu.'
-            match.perdu++;
-            localStorage.setItem('match', JSON.stringify(match))
-        }
-        else{
-            result = 'Vous avez gagne.'
-            match.gagne++;
-            localStorage.setItem('match', JSON.stringify(match))
-        }
+        result = gameStatus('roche', computerMove)
 
-        alert(`Vous avez choisi roche. L\'ordinateur a choisi ${computerMove}. ${result}.
-        match gagne:${match.gagne}, match perdu:${match.perdu}, match nul:${match.nul}`);
+       showAlert('roche')
     ">Rock</button>
 
-    <button>Paper</button>
+    <button onclick="
+        computerMove = chooseComputerMove();
 
-    <button>Scissor</button>
+        result = gameStatus('papier', computerMove)
+
+        showAlert('papier')
+    ">Paper</button>
+
+    <button onclick="
+        computerMove = chooseComputerMove();
+
+        result = gameStatus('ciseau', computerMove)
+
+        showAlert('ciseau')
+        
+    ">Scissor</button>
 
     <script>
         let match;
+        let computerMove;
+        let result;
         if(localStorage.getItem('match') === null){
             match = {
             gagne: 0,
@@ -57,9 +45,87 @@
         } else{
             match = JSON.parse(localStorage.getItem('match'))
         }
-         
+        
+        function chooseComputerMove(){
+            let computerMove = '';
+            let rand = Math.random()
+            if(rand < 1/3){
+                computerMove = 'roche'
+            } 
+            else if(rand >= 1/3 &&     rand <= 2/3){
+                computerMove = 'papier';
+            }
+            else{
+                computerMove = 'ciseau'
+            }
+            return computerMove
+        }
+
+        function gameStatus(playerMove, computerMove){
+            let result;
+            if(playerMove === 'roche'){
+                if(computerMove === 'roche'){
+                    result = 'Match nul.'
+                    match.nul++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                    
+                } 
+                else if(computerMove === 'papier'){
+                    result = 'Vous avez perdu.'
+                    match.perdu++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                }
+                else{
+                    result = 'Vous avez gagne.'
+                    match.gagne++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                }
+            }   
+            else if(playerMove === 'papier'){
+                if(computerMove === 'roche'){
+                    result = 'Vous avez gagne.'
+                    match.gagne++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                
+                } 
+                else if(computerMove === 'papier'){
+                    result = 'Match nul'
+                    match.nul++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                }
+                else{
+                    result = 'Vous avez perdu.'
+                    match.perdu++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                }
+            } else {
+            // pour ciseau
+                if(computerMove === 'roche'){
+                    result = 'Vous avez perdu.'
+                    match.perdu++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                    
+                } 
+                else if(computerMove === 'papier'){
+                    result = 'Vous avez gagne'
+                    match.gagne++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                }
+                else{
+                    result = 'Match nul'
+                    match.nul++;
+                    localStorage.setItem('match', JSON.stringify(match))
+                }
+            }
+
+            return result;
+        }
 
 
+        function showAlert(playerMove){
+            alert(`Vous avez choisi ${playerMove}. L\'ordinateur a choisi ${computerMove}. ${result}.
+            match gagne:${match.gagne}, match perdu:${match.perdu}, match nul:${match.nul}`);
+        }
         // console.log(localStorage.getItem('maison'))
         // localStorage.setItem('greeting', 'Hello World!')
         // console.log(localStorage.getItem('greeting'))
