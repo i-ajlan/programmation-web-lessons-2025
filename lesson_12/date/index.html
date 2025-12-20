@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Month</h1>
+    
+    <script>
+        let date = new Date();
+        // console.log(date);
+        //  console.log(typeof date);
+         let date2 = new Date(2025, 2, 4, 20, 45, 20, 12)
+        //  console.log(date2)
+         let date3 = new Date("2025-03-04")
+        // console.log(date3)
+        let date4 = new Date("2025-03-04T20:45:20Z")
+        // console.log(date4);
+        
+        console.log(date4.getFullYear());
+        console.log(date4.getMonth());
+        console.log(date4.getDate()); // jour du mois
+        console.log(date4.getDay()) // jour de la semaine
+        
+
+        console.log(date.getDay())
+        console.log(date.getTime())  
+        console.log(new Date(0))
+        
+        console.log(date4.setFullYear(2023))
+        console.log(date4.setMonth(9))
+        console.log(date4)
+    </script>
+</body>
+</html>

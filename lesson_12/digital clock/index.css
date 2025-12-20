@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right bottom,blue 50%, white);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    min-height: 100vh;
+    gap: 2em;
+    /* font-size: 2em; */
+}
+
+h1{
+    color: white;
+}
+
+.time-display{
+    font-size:5rem;
+    text-shadow: 5px 5px 5px black;
+}
+
+span{
+    position: relative;
+}
+
+span::before{
+    position: absolute;
+    font-size: 1rem;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.hour::before{
+    content: "hour"
+}
+.min::before{
+    content:"min"
+}
+.sec::before{
+    content:"sec"
+}

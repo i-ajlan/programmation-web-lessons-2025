@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    min-height: 100vh;
+    gap: 2em;
+    /* font-size: 2em; */
+}
+
+h1{
+    color:white;
+}
+
+.time-display{
+    font-size:5rem;
+}
+
+.btn{
+    font-size:1.5rem;
+    padding:0.5rem;
+    text-transform: capitalize;
+    border-radius: 10px;
+}
