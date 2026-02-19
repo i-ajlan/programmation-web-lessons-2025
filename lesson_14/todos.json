@@ -1,0 +1,12 @@
+[
+    {
+        "activites" : ["Acheter une voiture", "promener le chien"],
+        "completed" : true,
+        "nbr d'activites": 2 
+    },
+    {
+        "activites" : ["Faire a manger"],
+        "completed" : false,
+        "nbr d'activites": 1 
+    }
+]

@@ -12,7 +12,6 @@ function updateDate(){
     minElem.innerText = date.getMinutes()
     secElem.innerText = date.getSeconds()
 }
-fc  
 updateDate()
 
 setInterval(updateDate, 1000)

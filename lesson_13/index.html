@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Bookstore Clone</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <div class="sidebar-nav">
+                <div>
+                    <i class="fa-solid fa-xmark"></i>
+                    <div class="sidebar-profile">Hello, sign in</div>
+                    <div class="digital-content">
+                        <p>Digital Content & Devices</p>
+                        <ul>
+                            <li>
+                                Prime Video 
+                            </li>
+                            <li>
+                                Amazon Music
+                            </li>
+                            <li>
+                                Kindle E-readers & Books
+                            </li>
+                            <li>
+                                Amazon Appstore
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-nav-top">
+                <div class="logo-amazon">
+                    <i class="fa-brands fa-amazon"></i> amazon
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <p><span class="small-fs">Deliver to</span><br>Russian Federation</p>
+                </div>             
+                <div class="search-area">
+                    <button>Books <i class="fa-solid fa-caret-down"></i></button>
+                    <input type="text" placeholder="Search Amazon">
+                    <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>  
+                <div class="language">EN<i class="fa-solid fa-caret-down"></i></div> 
+                <div class="profile-nav"><span class="small-fs">Hello, sign in</span><br>Account & Lists<i class="fa-solid fa-caret-down"></i></div>
+                <div class="return-order">
+                    <span class="small-fs">Returns</span><br>& Orders
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+            </div>
+            <div class="sub-nav-middle">
+                <ul>
+                    <li class="btn-all"><i class="fa-solid fa-bars"></i> All</li>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Prime Video</a></li>
+                    <li><a href="#">Registry</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Sell</a></li>
+                </ul>
+            </div>
+            <div class="sub-nav-bottom">
+                <div class="books-logo">
+                    books
+                </div>
+                <div  class="buttons">
+                    <div class="drop-down-menu">
+                        <button>Categories <i class="fa-solid fa-caret-down"></i></button>
+                        <div>
+                            <p class="title"> All Categories
+                            </p>
+                            <hr style="background-color: black;">
+                            <a href="#">top Categories</a>
+                            <a href="#">Fiction</a>
+                            <a href="
+                            ">Non fiction</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button>New & Trending <i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="explore-books">
+            <p>Explorebooks</p>
+            <button>Kindle eBooks</button>
+            <button>Print Books</button>
+            <button>Audible Audiobooks</button>
+        </div>
+        <div class="shop-books">
+            <h2>Shop books</h2>
+            <section class="browsing-history">
+                <h3>Inspired by your browsing history</h3>
+                <div class="wrapper">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="slider">
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <section class="browsing-history">
+                <h3>Inspired by your browsing history</h3>
+                <div class="wrapper">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="slider">
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <section class="browsing-history">
+                <h3>Inspired by your browsing history</h3>
+                <div class="wrapper">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="slider">
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                        <div class="book">
+                            <div class="book-cover">
+                                <img src="image/book-cover.jpg" alt="book cover" width="200">
+                            </div>
+                            <div class="info-grading">
+                                <p class="grade">4.7</p>
+                                <div class="star-outer">
+                                    <div class="star-inner" style="color: gold; font-size:1.2rem;"></div>
+                                </div>
+                                <p class="nbr-reviews">13</p>
+                            </div>
+                            <div class="other-info">
+                                Paperback
+                            </div>
+                            <p class="price">
+                               <sup>HTG</sup>2000 
+                            </p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+          
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
