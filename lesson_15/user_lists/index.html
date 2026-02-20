@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Users List</h1>
+    <form id="user-form">
+        <div>
+            <label for="input-title">Title:</label>
+            <input id="input-title" required name="title" type="text" placeholder="CEO">
+        </div>
+        <div>
+            <label for="input-name">Name:</label>
+            <input id="input-name" required name="name" type="text" placeholder="John Brown">
+        </div>
+        <div>
+            <label for="input-email">Email:</label>
+            <input id="input-email" required name="email" type="text" placeholder="johnbrown@something.com">
+        </div>
+        <div>
+            <label for="input-phone">Phone Number:</label>
+            <input id="input-phone" required name="phone" type="text" pattern="[0-9]*" placeholder="+234 0923 34 34">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="users-container">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
