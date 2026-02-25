@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* navbar style  */
+
+.navbar{
+    width: 100%;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7)  10%, transparent);
+    z-index: 1;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-left img{
+    width: 90px;
+}
+
+.navbar-left ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-left ul li{
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+
+.navbar-right .profile{
+    border-radius: 4px;
+    width: 35px;
+}
+
+.navbar-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar-profile .dropdown{
+    position: absolute;
+    top:100%;
+    right: 0;
+    width: max-content;
+    background-color: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    /* z-index: 1; */
+    display: none;
+}
+
+.navbar-profile .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.navbar-profile:hover .dropdown{
+    display: block;
+}
+
+/* hero style  */
+
+.hero{
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right,transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.hero-caption{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.caption-img{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.hero-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.hero-btns .btn img{
+    /* display: block; */
+    width: 25px;
+}
+
+.hero-btns .btn{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btns .btn.dark-btn{
+    color: #fff;
+    background-color: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover{
+    background-color: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover{
+    background-color: #6d6d6e66;
+}
+
+/* title cards */
+.title-cards{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title-cards h2{
+    margin-bottom: 8px;
+}
+
+.card-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar{
+    display: none;
+}
+
+.card-list img {
+    width: 240px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.more-cards{
+    padding-left: 1em;
+}
+
+/* footer style  */
+
+.footer{
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.footer-icons img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.footer ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.copyright-text{
+    color: gray;
+    font-size: 14px;
+}
